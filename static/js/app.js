@@ -23,7 +23,7 @@ tableData.forEach(function(UFOreport) {
 var submit = d3.select("#filter-btn");
 
 submit.on("click", function() {
-    tbody.empty();                //How to make it update the page correctly?
+    tbody.html('');                //Clears the data in the table
     //d3.event.preventDefault();
     // Select the input element and get the raw HTML node
     var inputElement = d3.select("#datetime");
